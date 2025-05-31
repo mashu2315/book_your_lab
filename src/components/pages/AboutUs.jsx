@@ -44,7 +44,7 @@ const AboutUs = () => {
           <div className='flex flex-col gap-6 sm:w-1/2 w-full'>
             {
               About.filter(value => value.id <= 2).map((value) => (
-                <div key={value.id} className='p-2 flex flex-col hover:scale-105 transition-all duration-200 hover:shadow-2xl items-center shadow-[0_3px_10px_rgb(0,0,0,0.2)] rounded-lg'>
+                <div key={value.id} className='p-2 flex bg-white flex-col hover:scale-105 transition-all duration-200 hover:shadow-2xl items-center shadow-[0_3px_10px_rgb(0,0,0,0.2)] rounded-lg'>
                   <img src={value.image} alt="Not Found" className='h-[80px] sm:h-[100px]' />
                   <h1 className='font-bold my-2 text-[#434343] text-sm text-center'>{value.title}</h1>
                   <p className='text-[#7B7B7B] text-xs text-center'>{value.description}</p>
@@ -55,7 +55,7 @@ const AboutUs = () => {
           <div className='flex  flex-col gap-6 sm:w-1/2 w-full md:mt-14'>
             {
               About.filter(value => value.id > 2).map((value) => (
-                <div key={value.id} className='p-2 flex flex-col hover:scale-105 transition-all duration-200 hover:shadow-2xl items-center shadow-[0_3px_10px_rgb(0,0,0,0.2)] rounded-lg'>
+                <div key={value.id} className='p-2 flex bg-white flex-col hover:scale-105 transition-all duration-200 hover:shadow-2xl items-center shadow-[0_3px_10px_rgb(0,0,0,0.2)] rounded-lg'>
                   <img src={value.image} alt="Not Found" className='h-[80px] sm:h-[100px]' />
                   <h1 className='font-bold my-2 text-[#434343] text-sm text-center'>{value.title}</h1>
                   <p className='text-[#7B7B7B] text-xs text-center'>{value.description}</p>
@@ -93,7 +93,7 @@ const AboutUs = () => {
       </div>
 
       {/* Background Logo */}
-      <div className="absolute top-[50px] right-[30px] rotate-180">
+      <div className="absolute top-[50px] scale-50 sm:scale-75 md:scale-100  -right-12 sm:-right-6 md:right-[30px] rotate-45 sm:rotate-180">
         <img src={halflogo} alt="not found" className="h-[100px] sm:h-[120px] opacity-10" />
       </div>
     </div>
