@@ -10,11 +10,11 @@ const Footer = () => {
     <div className='bg-[#097C9A26]'>
       <div className='bg-[#097C9A] w-screen flex items-center justify-center pb-16 relative'>
         {/* Newsletter Subscription Section */}
-        <div className='bg-[#00DBA1] rounded-bl-3xl rounded-tr-3xl p-5  flex flex-col md:flex-row justify-center items-center w-9/12 md:w-10/12 scale-110 absolute -top-[50px] transition-all duration-500 ease-in-out hover:scale-115 animate-fadeIn '>
-          <p className='text-white mr-0 md:mr-10 mb-4 md:mb-0 uppercase text-lg md:text-base font-semibold text-center'>
+        <div className='bg-[#00DBA1] rounded-bl-3xl rounded-tr-3xl p-2 sm:p-5  flex flex-col md:flex-row justify-center items-center w-9/12 md:w-10/12 scale-110 absolute -top-[50px] transition-all duration-500 ease-in-out hover:scale-115 animate-fadeIn '>
+          <p className='text-white mr-0 md:mr-10 mb-4 md:mb-0 uppercase text-sm sm:text-lg md:text-base font-semibold text-center'>
             Subscribe to Our Newsletter
           </p>
-          <div className='w-[500px] md:w-full flex justify-center'>
+          <div className=' scale-75 sm:scale-75 md:scale-100 w-[200px] md:w-full flex flex-col sm:flex-row justify-center'>
             <input
               type="text"
               className='p-1 placeholder-text-white px-3 rounded-tl-lg text-[#097C9A] md:w-full'
@@ -26,7 +26,7 @@ const Footer = () => {
           </div>
         </div>
         {/* Main Footer Content */}
-        <div className='flex flex-col sm:flex-row pl-[40px] pt-[80px] gap-8 sm:gap-0'>
+        <div className='flex flex-col sm:flex-row pl-[40px] pt-[90px] sm:pt-[80px] gap-8 sm:gap-0'>
           {/* Logo and Social Section */}
           <div className='animate-fadeIn'>
             <img src={logo2} alt="Not found" className='h-[60px] mx-auto sm:mx-0' />
