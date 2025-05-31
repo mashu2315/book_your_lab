@@ -17,22 +17,20 @@ import PopularTestsSlider from './components/pages/PopularTestSlider'
 function App() {
   return (
     <div className='bg-white '>
-      
+
       <Navbar />
       <Header />
       <Homepage />
       <Cards />
-      
       <AboutUs />
-      
-      <PopularTestsSlider upperlimit={3} lowerlimit={1} heading={"Our Tests"} text={"Most Popular Tests"}/>
-      <ProhibitHabit/>
+      <PopularTestsSlider upperlimit={3} lowerlimit={1} heading={"Our Tests"} text={"Most Popular Tests"} />
+      <ProhibitHabit />
       <PopularTestsSlider upperlimit={6} lowerlimit={4} heading={"Our Tests"} text={"Browse Test By Risks"} />
       <Testimonial />
-      <Tests/>
-      <ComingApp/>
-      <BookYourSlot/>
-      <Footer/>
+      <Tests />
+      <ComingApp />
+      <BookYourSlot />
+      <Footer />
     </div>
   )
 }

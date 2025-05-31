@@ -58,7 +58,7 @@ const Testimonial = () => {
       </div>
 
       {/* main content */}
-      <div className="relative z-10">
+      <div className="relative z-10  hover:cursor-pointer">
         <div className="relative bg-white bg-opacity-60 w-full h-full py-16 px-4 sm:px-6 lg:px-8 flex flex-col items-center justify-center">
           <div className="scale-105 animate-fadeInUp">
             <Headline heading={"Testimonials"} text={"What Our Patients Says"} />

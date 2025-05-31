@@ -44,7 +44,7 @@ const ComingApp = () => {
             industry. <br className="hidden sm:inline" />
             Lorem Ipsum has been the industry's standard dummy.
           </p>
-          <button className="bg-[#00DBA1] text-white border-0 rounded-br-xl rounded-tl-xl px-6 py-2 text-sm font-bold hover:bg-[#08c294] transition-all animate-fadeInUp delay-300">
+          <button className="bg-[#00DBA1] hover:scale-105 transition-all duration-100 hover:border-teal-300 hover:border-[0.5px] hover:bg-[white] hover:text-[#00DBA1] text-white border-0 rounded-br-xl rounded-tl-xl px-6 py-2 text-sm font-bold   animate-fadeInUp delay-100">
             Get Notified
           </button>
         </div>

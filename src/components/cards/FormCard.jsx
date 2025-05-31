@@ -7,7 +7,7 @@ import halflogo from "../../assets/halflogo.png"
 
 const FormCard = () => {
   return (
-    <div className='flex flex-col items-center justify-center'>
+    <div className='flex flex-col items-center justify-center '>
       <div className='flex flex-col'>
         <Headline heading={"Health Checkups"} text={"Let Us Suggest You The Best"} />
         <p className='font-poppins pt-5 text-center text-[#434343]'>Select a body organ and we’ll suggest the best available tests to help in precise diagnosis of
@@ -15,7 +15,7 @@ const FormCard = () => {
         </p>
         <div >
           <div className='relative  flex flex-col items-center lg:flex-row h-[450px] gap-2 mt-4 '>
-            <div className='w-[410px]  relative flex items-center justify-center'><img src={formbg} alt="Not found bg" /><img src={body} alt="Not found bg" className=' absolute h-[420px]' />
+            <div className='w-[410px]  relative flex items-center justify-center hover:scale-105 transition-all duration-200'><img src={formbg} alt="Not found bg" /><img src={body} alt="Not found bg" className=' absolute h-[420px]' />
             </div>
             <div>
               <Form />
