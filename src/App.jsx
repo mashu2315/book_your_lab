@@ -16,7 +16,7 @@ import PopularTestsSlider from './components/pages/PopularTestSlider'
 
 function App() {
   return (
-    <div className='bg-white '>
+    <div className='bg-white h-screen w-screen overflow-x-hidden'>
 
       <Navbar />
       <Header />

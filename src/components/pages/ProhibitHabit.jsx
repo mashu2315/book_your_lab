@@ -104,7 +104,7 @@ const ProhibitHabit = () => {
                     }
                 </div>
             </div>
-            <button className=" bg-[#00DBA1] my-6  text-white border-0 rounded-br-xl rounded-tl-xl px-6 py-[6px] text-[12px] font-bold hover:scale-105 transition-all duration-200 hover:border-teal-300 hover:border-[0.5px] hover:bg-[white] hover:text-[#00DBA1]">
+            <button className=" bg-[#00DBA1] my-6  text-white border-0 rounded-br-xl rounded-tl-xl px-6 py-[6px] text-[12px] font-bold  transition-all duration-200 hover:border-teal-300 hover:bg-[white] hover:text-[#00DBA1]">
                 View Details
             </button>
         </div>

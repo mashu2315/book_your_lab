@@ -5,10 +5,10 @@
 //     <div className='py-[90px] flex flex-col items-center justify-center scale-125 '>
 //         <div>
 //             <Headline heading={"Book Now"} text={"Testing by Our Expert Lab Scientists"} />
-            
+
 //         </div>
 //         <p className='text-[#434343] text-center'>Bring to the table win-win survival strategies to ensure proactive domination and at the <br /> end of the day.</p>
-            
+
 //         <button className=" bg-[#097C9A] my-6 text-white border-0 rounded-br-xl rounded-tl-xl px-6 py-[6px] text-[16px] font-bold">
 //                         Book Now
 //     </button>

@@ -85,7 +85,7 @@ const AboutUs = () => {
               <li>International Standards Organization (ISO9001 and ISO17025)</li>
               <li>United States Department of Agriculture (USDA) No. 35-R-034</li>
             </ul>
-            <button className="flex gap-2 mt-6 bg-[#00DBA1] hover:scale-105 transition-all duration-200 hover:border-teal-300 hover:border-[0.5px] hover:bg-[white] hover:text-[#00DBA1]  text-white border-0 rounded-br-xl rounded-tl-xl px-4 py-1.5 text-xs font-bold">
+            <button className="flex gap-2 mt-6 bg-[#00DBA1] transition-all duration-200 hover:border-teal-300  hover:bg-[white] hover:text-[#00DBA1]  text-white border-[0.5] border-white rounded-br-xl rounded-tl-xl px-4 py-1.5 text-xs font-bold">
               View List
             </button>
           </div>

@@ -35,7 +35,7 @@ const Footer = () => {
             </p>
             <div className='flex pt-2 justify-center sm:justify-start'>
               <div className='bg-[#00DBA1] text-white hover:bg-white hover:text-[#00DBA1] rounded-full p-2 mr-2 hover:scale-110 hover:cursor-pointer transition-all duration-200'>
-                <FaFacebookF  fontSize={12} />
+                <FaFacebookF fontSize={12} />
               </div>
               <div className='bg-[#00DBA1] text-white  hover:bg-white hover:text-[#00DBA1] rounded-full p-2 mr-2 hover:scale-110 transition-all hover:cursor-pointer duration-200'>
                 <FaTwitter fontSize={12} />

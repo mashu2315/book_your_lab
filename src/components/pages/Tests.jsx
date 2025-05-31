@@ -28,7 +28,7 @@ const Tests = () => {
     <div className="flex flex-wrap justify-center px-4 py-12 gap-6 animate-fadeInSlow">
       {test.map((event) => (
         <div
-          className="flex items-center space-x-4 transition-transform duration-500 hover:scale-105 hover:shadow-lg rounded-xl p-2 animate-fadeInUp"
+          className="flex items-center space-x-4 transition-transform duration-500 hover:scale-105 rounded-xl p-2 animate-fadeInUp"
           key={event.id}
         >
           <div className="shadow-[0_3px_10px_rgb(0,0,0,0.2)] flex justify-center items-center rounded-full h-[60px] w-[60px]">

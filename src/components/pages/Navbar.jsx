@@ -20,7 +20,7 @@ const Navbar = () => {
         {/* Search Bar and Flag Dropdown */}
         <div className="flex items-center w-full max-w-2xl">
           <div className="flex w-full items-center">
-            <div className="flex p-2 bg-[#F4F4F4] items-center w-full rounded-tl-xl hover:scale-105 transition-all duration-200">
+            <div className="flex p-2 bg-[#F4F4F4] items-center w-full rounded-tl-xl hover:scale-100 transition-all duration-200">
               <CiSearch fontSize={25} className="text-[#807F8A]" />
               <input
                 type="search"

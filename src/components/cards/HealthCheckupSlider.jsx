@@ -1,7 +1,7 @@
 
 import React, { useState, useRef } from "react";
 import Slider from "react-slick";
-import { FaShoppingCart } from "react-icons/fa";
+import { FiShoppingCart } from "react-icons/fi";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import halflogo from "../../assets/halflogo.png";
@@ -80,7 +80,7 @@ const PrevArrow = ({ onClick }) => (
 const settings = {
     dots: false,
     infinite: true,
-    speed: 500,
+    speed: 1000,
     slidesToShow: 3,
     slidesToScroll: 1,
     arrows: true,
@@ -108,13 +108,7 @@ const HealthCheckupSlider = () => {
     const [currentSlide, setCurrentSlide] = useState(0);
     const sliderRef = useRef(null);
 
-    // Function to determine the index of the middle card
-//     const getMiddleCardIndex = () => {
-//     const slidesToShow = window.innerWidth <= 640 ? 1 : window.innerWidth <= 1024 ? 2 : 3;
-//     return currentSlide + Math.floor((slidesToShow - 1) / 2);
-// };
 
-  
     // Handle slide change to update currentSlide state
     const handleAfterChange = (index) => {
         setCurrentSlide(index);
@@ -122,38 +116,28 @@ const HealthCheckupSlider = () => {
 
     return (
         // Main slider container with background logo
-       <div className="relative w-[400px] sm:w-auto">
+        <div className="relative w-[400px] sm:w-auto">
 
             <div className="relative px-4 sm:px-6 md:px-10 w-full max-w-[1000px] mx-auto h-auto sm:h-[300px] my-10 ">
                 {/* Slider component */}
                 <Slider {...settings} ref={sliderRef} afterChange={handleAfterChange}>
                     {checkups.map((item) => {
                         // Determine if this card is the middle one
-                        
+
 
                         const slidesToShow = window.innerWidth <= 640 ? 1 : window.innerWidth <= 1024 ? 2 : 3;
                         const middleIndex = currentSlide + Math.floor(slidesToShow / 2);
                         const isMiddle = item.id === checkups[middleIndex % checkups.length]?.id;
-
-                       
-                        
-                        
                         return (
                             <div
-                                key={item.id}
-
-                                className={`px-3 relative  transition-all duration-500 ease-in-out ${
-                                    isMiddle ? 'scale-110 transition-all duration-500' : 'scale-90'
-                                }`}
-                            > 
+                                key={item.id} className={`px-3 relative  transition-all duration-500 ease-in-out ${isMiddle ? 'scale-110 transition-all duration-500' : 'scale-90'
+                                    }`}>
                                 <div className="rounded-br-xl rounded-tl-xl overflow-hidden shadow-md text-center relative">
-                                    <div className={`${
-                                    isMiddle ? 'bg-blur-sm' : ''
-                                }`}>
+                                    <div className={`${isMiddle ? 'bg-blur-sm' : ''
+                                        }`}>
                                         <div className="flex justify-center">
-                                            <div className={`relative w-full min-h-[250px] sm:h-64 ${
-                                    isMiddle ? 'opacity-20' : ''
-                                }`}>
+                                            <div className={`relative w-full min-h-[250px] sm:h-64 ${isMiddle ? 'opacity-10' : ''
+                                                }`}>
                                                 <img
                                                     src={item.image}
                                                     alt={item.title}
@@ -166,7 +150,7 @@ const HealthCheckupSlider = () => {
                                                 />
                                             </div>
                                             <div className={`absolute top-16 ${isMiddle ? 'text-black' : 'text-white'}`}>
-                                                <h3 className="font-bold text-lg ">{item.title}</h3>
+                                                <h3 className="font-bold text-2xl ">{item.title}</h3>
                                                 <p className="text-sm text-[#00DBA1] font-semibold mt-1">
                                                     {item.tests}
                                                 </p>
@@ -183,8 +167,8 @@ const HealthCheckupSlider = () => {
                                             60% Off
                                         </div>
                                     </div>
-                                    <button className="bg-[#097C9A] text-white text-sm font-medium w-full py-2 flex items-center justify-center gap-2 hover:bg-white hover:text-[#097C9A] transition-all duration-200">
-                                        Add To Cart <FaShoppingCart />
+                                    <button className="bg-[#097C9A]  text-white text-sm font-medium w-full py-2 flex items-center justify-center gap-2 hover:bg-white hover:text-[#097C9A] transition-all duration-200">
+                                        Add To Cart <FiShoppingCart />
                                     </button>
                                 </div>
                             </div>
@@ -192,7 +176,7 @@ const HealthCheckupSlider = () => {
                     })}
                 </Slider>
             </div>
-            {/* Decorative background logo */}
+            {/* background logo */}
             <div className="absolute top-[0px] -left-[130px] rotate-180">
                 <img src={halflogo} alt="not found" className="h-[120px] opacity-10" />
             </div>
