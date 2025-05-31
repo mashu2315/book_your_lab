@@ -33,7 +33,7 @@ const Homepage = () => {
             </button>
           </div>
 
-
+   
           {/* Image Placeholder */}
           <div className="relative z-20 w-1/2 h-full flex items-center justify-center scale-95 md:scale-100">
             <div className="w-[400px] h-[400px]  flex z-0 items-center justify-center">
