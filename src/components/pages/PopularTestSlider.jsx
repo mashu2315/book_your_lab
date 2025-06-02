@@ -4,7 +4,6 @@ import { FaAngleRight } from "react-icons/fa6";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Headline from "../cards/Headline"
-
 import testCards from "../../data/testCards";
 
 const NextArrow = ({ onClick }) => (

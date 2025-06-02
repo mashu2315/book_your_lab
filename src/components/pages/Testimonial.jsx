@@ -2,7 +2,6 @@
 import React from "react";
 import Slider from "react-slick";
 import bgImage from "../../assets/testimonialbg.png";
-import mukkaMalar from "../../assets/mukkaMalar.png";
 import Headline from "../cards/Headline";
 import halflogo from "../../assets/halflogo.png";
 import curve from "../../assets/curve.png";

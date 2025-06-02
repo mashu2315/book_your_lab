@@ -1,5 +1,3 @@
-
-
 import React from "react";
 import app from "../../assets/app.png";
 import blue from "../../assets/blue.png";
